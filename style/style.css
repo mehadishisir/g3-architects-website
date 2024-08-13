@@ -18,6 +18,9 @@
    .bg-color{
     background-color: rgba(255, 144, 14, 0.1);
    }
+   main > section{
+    margin-top: 130px;
+   }
 
   /* header style */
 
@@ -71,11 +74,55 @@
   .banner-img{
     width: 100%;
   }
+  /* features style */
+   main{
+    max-width: 1440px;
+    margin: 0 auto;
+    }
+    .features{
+      display: flex;
+    align-items: center;
+    }
+  .features-img{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 24px;
+  }
+  .features-text{
+    margin-left: 130px;
+    max-width: 537px;
+    
+  }
+  .heading{
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  #quick-list{
+    font-weight: 500;
+    font-size: 3rem;
+  }
+  .feat{
+    color:rgba(255, 144, 14, 1);
+  }
+  /* features you will love and enjoy */
+  .fyw{
+    font-size: 3rem;
+    font-weight: 800;
+
+  }
+
    @media screen and (max-width: 576px){
-    .navbar, .nav-items {
+    .navbar, 
+    .nav-items , 
+    .features {
       flex-direction: column;
     }
-    
+    .features-img{
+      grid-template-columns:repeat(1,1fr);
+    }
+    .features-text{
+      margin: 0 auto;
+    }
    }
     
    
