@@ -104,10 +104,37 @@
   .feat{
     color:rgba(255, 144, 14, 1);
   }
+  /* fact related style */
+   .fact-card{
+    border: 1px solid #FF900E;
+    width: 241px;
+    height: 241px;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   }
   /* features you will love and enjoy */
   .fyw{
     font-size: 3rem;
     font-weight: 800;
+
+  }
+  .facts-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   
+  }
+  .fact-number{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .fact-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 60px;
 
   }
 
@@ -117,8 +144,12 @@
     .features {
       flex-direction: column;
     }
-    .features-img{
+    .features-img, .facts-container{
       grid-template-columns:repeat(1,1fr);
+    }
+    .facts-container{
+      gap: 24px;
+      justify-content: center;
     }
     .features-text{
       margin: 0 auto;
